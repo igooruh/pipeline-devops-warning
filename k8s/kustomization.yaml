@@ -7,5 +7,5 @@ resources:
 
 images:
 - name: nodeserver
-  newName: /gitops
-  newTag: e8ea9c7ed0fe65f7fc848d4d990b4e2852aad59a
+  newName: igooruh/gitops
+  newTag: 02b1941ffe1d9900873fc3dffd814fc088e87dd9
