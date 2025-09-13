@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }))
 
 app.get('/health', (_, res) => {
   res.status(200).json({
-    health: `application it's running`,
+    health: `health application ok`,
   })
 })
 
