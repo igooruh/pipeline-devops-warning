@@ -5,7 +5,7 @@ metadata:
   namespace: pipeline-devops-warning
 spec:
   destination:
-    namespace: openshift-image-registry
+    namespace: pipeline-devops-warning
     server: https://kubernetes.default.svc
   project: default
   source:

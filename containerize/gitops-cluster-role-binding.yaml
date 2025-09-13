@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: argocd-application-controller-cluster-admin
+  name: pipeline-devops-warning-controller-cluster-admin
 subjects:
   - kind: ServiceAccount
     name: openshift-gitops-argocd-application-controller
