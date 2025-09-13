@@ -8,4 +8,4 @@ resources:
 images:
 - name: nodeserver
   newName: igooruh/pipeline-devops-warning
-  newTag: f03aff1e7d533bcc7988692d5e53c395f9373ead
+  newTag: 0424e4e2dedbc9d2c66f39a7531ca6550f877c0e
