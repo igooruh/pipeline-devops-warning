@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- deployment.yaml
+- service.yaml
+
+images:
+- name: nodeserver
+  newName: /gitops
+  newTag: e8ea9c7ed0fe65f7fc848d4d990b4e2852aad59a

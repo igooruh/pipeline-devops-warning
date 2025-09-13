@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bb-gitops-pipeline-turbonomic
+  namespace: pipeline-devops-warning
+spec:
+  destination:
+    namespace: openshift-image-registry
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: k8s
+    repoURL: https://github.com/igooruh/pipeline-devops-warning
+    targetRevision: develop
+  syncPolicy:
+    syncOptions:
+      - PruneLast=true
+      - RespectIgnoreDifferences=true
+      - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true

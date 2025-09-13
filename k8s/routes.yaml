@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: application-pipeline-devops-warning
+    app.kubernetes.io/instance: bb-gitops-pipeline
+  name: application-pipeline-devops-warning-route
+  namespace: pipeline-devops-warning
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: pipeline-devops-warning-service
+    weight: 100
+  wildcardPolicy: None
