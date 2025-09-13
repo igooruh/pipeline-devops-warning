@@ -3,8 +3,8 @@ kind: Route
 metadata:
   labels:
     app: application-pipeline-devops-warning
-    app.kubernetes.io/instance: bb-gitops-pipeline
-  name: application-pipeline-devops-warning-route
+    app.kubernetes.io/instance: bb-gitops-pipeline-devops
+  name: application-pipeline-devops-warning
   namespace: pipeline-devops-warning
 spec:
   port:

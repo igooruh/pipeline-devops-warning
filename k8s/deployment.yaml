@@ -5,18 +5,18 @@ metadata:
   namespace: pipeline-devops-warning
   labels:
     app: application-pipeline-devops-warning
-    app.kubernetes.io/instance: bb-gitops-pipeline
+    app.kubernetes.io/instance: bb-gitops-pipeline-devops
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: application-pipeline-devops-warning
-      app.kubernetes.io/instance: bb-gitops-pipeline
+      app.kubernetes.io/instance: bb-gitops-pipeline-devops
   template:
     metadata:
       labels:
         app: application-pipeline-devops-warning
-        app.kubernetes.io/instance: bb-gitops-pipeline
+        app.kubernetes.io/instance: bb-gitops-pipeline-devops
     spec:
       containers:
         - name: application-pipeline-devops-warning

@@ -5,7 +5,7 @@ metadata:
   name: pipeline-devops-warning-service
   labels:
     app: application-pipeline-devops-warning
-    app.kubernetes.io/instance: bb-gitops-pipeline
+    app.kubernetes.io/instance: bb-gitops-pipeline-devops
 spec:
   selector:
     app: application-pipeline-devops-warning

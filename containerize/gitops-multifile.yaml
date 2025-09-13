@@ -3,6 +3,9 @@ kind: Application
 metadata:
   name: bb-gitops-pipeline-turbonomic
   namespace: pipeline-devops-warning
+  labels:
+    app: application-pipeline-devops-warning
+    app.kubernetes.io/instance: bb-gitops-pipeline-devops
 spec:
   destination:
     namespace: pipeline-devops-warning
