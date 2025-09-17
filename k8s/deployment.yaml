@@ -7,7 +7,7 @@ metadata:
     app: application-pipeline-devops-warning
     app.kubernetes.io/instance: bb-gitops-pipeline-devops
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: application-pipeline-devops-warning
@@ -35,7 +35,7 @@ spec:
               memory: 20Gi
             requests:
               cpu: 10m
-              memory: 2Gi
+              memory: 10Gi
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
           imagePullPolicy: Always
