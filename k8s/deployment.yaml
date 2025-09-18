@@ -7,7 +7,7 @@ metadata:
     app: application-pipeline-devops-warning
     app.kubernetes.io/instance: bb-gitops-pipeline-devops
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: application-pipeline-devops-warning
