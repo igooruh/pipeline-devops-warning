@@ -31,8 +31,8 @@ spec:
               value: '95'
           resources:
             limits:
-              cpu: 80m
-              memory: 80Gi
+              cpu: 180m
+              memory: 2Gi
             requests:
               cpu: 2m
               memory: 2Gi
