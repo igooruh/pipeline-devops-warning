@@ -21,6 +21,8 @@ spec:
       containers:
         - name: application-pipeline-devops-warning
           image: default-route-openshift-image-registry.apps.itz-vaz6gq.infra01-lb.dal14.techzone.ibm.com/pipeline-devops-warning/image-pipeline-devops-warning-route:v1
+          args:
+            - --disable_ssl_cert_verification=true
           ports:
             - containerPort: 8080
               protocol: TCP
